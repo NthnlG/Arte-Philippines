@@ -1,0 +1,137 @@
+:root{
+    --main-family: "ITC Avant Garde Gothic", sans-serif;
+    --main-weight: 400;
+    --main-style: normal;
+    --nav-family: "ITC Avant Garde Gothic", sans-serif;
+    --nav-weight: 400;
+    --nav-style: normal;
+    --heading-family: "ITC Avant Garde Gothic", sans-serif;
+    --heading-weight: 600;
+    --heading-style: normal;
+    --font-size: 16px;
+    --h1-size: 26px;
+    --h2-size: 23px;
+    --h3-size: 23px;
+    --nav-size: 16px;
+    --announcement-background: rgba(0,0,0,0);
+    --announcement-text: #393939;
+    --header-background: #f6f5f3;
+    --header-text: #393939;
+    --nav-color: #000000;
+    --nav-hover-link-color: #59533f;
+    --nav-hover-accent-color: #59533f;
+    --nav-dropdown-text: #434343;
+    --nav-dropdown-background: #e9e9e9;
+    --mobile-header-background: #ffffff;
+    --mobile-header-text: #393939;
+    --background: #FFF6EA;
+    --text-color: #434343;
+}
+html{
+	scroll-behavior: smooth;
+}
+*{
+    /* outline: red dashed 1px; */
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background);
+    padding: 0;
+    margin:0;
+    height:200vh;
+}
+.space{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.header{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: auto;
+    background-color:var(--header-background);
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    opacity: 0.8;
+    font-family: var(--nav-family);
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 20rem;
+    height: auto;   
+}
+a{
+    text-decoration: none;
+    color: var(--nav-family);
+}
+.choice{
+    text-decoration: none;
+    border: 3px solid transparent;
+    padding: 3px;
+    font-weight: var(--main-weight);
+    font-style: var(--main-style);
+    font-size: var(--font-size);
+	list-style-type: none;
+}
+.choice:hover{
+    border-bottom: 3px solid #393939;
+}
+/*About Us*/
+h1{
+    color: var(--mobile-header-text);
+    font-family: var(--main-family);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+}
+.about{
+    background-color: var(--header-background);
+    width: 100%;
+    height: 9rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+.footer-con{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+	width: 100% ;
+}
+.float{
+	float: left;
+	margin-right: 1rem;
+}
+
+/*ABOUT US*/
+.content{
+    height: auto;
+    width: 70%;
+    margin: auto;
+    padding: auto;
+    font-family: var(--main-family);
+    font-size: var(--font-size);
+    word-spacing: .2rem;
+    color: #393939;
+}
+.content p{
+    padding: .5rem 0;
+    line-height: 1.4rem;
+}
+.strong{
+    font-weight:bolder;
+}
